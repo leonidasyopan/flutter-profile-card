@@ -15,8 +15,6 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   int likes = 0;
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -196,12 +194,12 @@ class _ProfileState extends State<Profile> {
                 Icon(
                   Icons.email,
                   color: Colors.grey,
-                  size: 30.0,
+                  size: 20.0,
                 ),
                 SizedBox(width: 20.0),
                 Text(
                   'leonidasyopan@gmail.com',
-                  style: TextStyle(color: Colors.grey, fontSize: 25.0),
+                  style: TextStyle(color: Colors.grey, fontSize: 20.0),
                 ),
               ],
             ),
@@ -211,12 +209,12 @@ class _ProfileState extends State<Profile> {
                 Icon(
                   Icons.phone,
                   color: Colors.grey,
-                  size: 30.0,
+                  size: 20.0,
                 ),
                 SizedBox(width: 20.0),
                 Text(
                   '+55 48 99823-5707',
-                  style: TextStyle(color: Colors.grey, fontSize: 25.0),
+                  style: TextStyle(color: Colors.grey, fontSize: 20.0),
                 ),
               ],
             ),
