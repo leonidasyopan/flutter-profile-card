@@ -23,6 +23,16 @@ class Home extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Center(
+              child: CircleAvatar(
+                radius: 80.0,
+                backgroundImage: AssetImage('assets/leonidas.jpg'),
+              ),
+            ),
+            Divider(
+              color: Colors.grey,
+              height: 80.0,
+            ),
             Text(
               'NAME',
               style: TextStyle(
@@ -104,7 +114,45 @@ class Home extends StatelessWidget {
                 fontSize: 30.0,
               ),
             ),
-            SizedBox(height: 30.0,),
+            Divider(
+              color: Colors.grey,
+              height: 80.0,
+            ),
+            Row(
+              children: [
+                Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                  size: 30.0,
+                ),
+                SizedBox(width: 20.0),
+                Text(
+                  'leonidasyopan@gmail.com',
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 25.0
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 20.0),
+            Row(
+              children: [
+                Icon(
+                  Icons.phone,
+                  color: Colors.grey,
+                  size: 30.0,
+                ),
+                SizedBox(width: 20.0),
+                Text(
+                  '+55 48 99823-5707',
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 25.0
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
